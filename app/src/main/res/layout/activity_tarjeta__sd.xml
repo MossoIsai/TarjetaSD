@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="org.mossin.com.tarjetasd.app.Tarjeta_SD">
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:hint="Introduce el nombre del archivo"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editText"
+        android:hint="Escribe tu mensaje"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:drawableRight="@android:drawable/ic_menu_save"
+        android:id="@+id/button"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leer"
+        android:id="@+id/button2"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:layout_below="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo"
+        android:id="@+id/button3"
+        android:drawableRight="@android:drawable/ic_menu_add"
+        android:layout_below="@+id/button2"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+   <!--Parte de abajo-->
+    <ScrollView
+        android:layout_marginTop="150dp"
+        android:layout_below="@id/button"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/scrollView"
+        android:layout_centerVertical="true"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:id="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp" />
+
+        </ScrollView>
+</RelativeLayout>
